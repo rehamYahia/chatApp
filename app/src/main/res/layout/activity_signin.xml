@@ -28,7 +28,7 @@
                 android:layout_marginTop="@dimen/_40sdp"
                 android:text="Welcom Back!"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/_18sdp"
+                android:textSize="@dimen/_20sdp"
                 android:textStyle="bold" />
 
             <TextView
@@ -46,7 +46,8 @@
                 android:layout_height="@dimen/_45sdp"
                 android:layout_marginTop="@dimen/_40sdp"
                 android:background="@drawable/background_input"
-                android:hint="Email"
+                android:hint="email..."
+                android:textColorHint="@color/colorPrimaryDark"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
@@ -61,9 +62,10 @@
                 android:layout_height="@dimen/_45sdp"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:background="@drawable/background_input"
-                android:hint="Password"
+                android:hint="password..."
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
+                android:textColorHint="@color/colorPrimaryDark"
                 android:inputType="textPassword"
                 android:paddingStart="@dimen/_16sdp"
                 android:paddingEnd="@dimen/_16sdp"
@@ -76,21 +78,24 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 android:animateLayoutChanges="true">
 
-                <Button
-                    android:id="@+id/buttonSignIn"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
-                    android:text="Sign In"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold"
-                    android:background="@drawable/button" />
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/buttonSignIn"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_40sdp"
+                   android:text="sign in"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_20sdp"
+                   android:textStyle="bold"
+                   android:background="@drawable/background_chat_input"
+
+                   />
                 <ProgressBar
                     android:id="@+id/progressBar"
                     android:layout_width="@dimen/_25sdp"
                     android:layout_height="@dimen/_25sdp"
                     android:layout_gravity="center"
-                    android:visibility="invisible"/>
+                    android:visibility="invisible"
+                    android:shadowColor="@color/colorPrimaryDark"/>
 
             </FrameLayout>
 
@@ -102,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:text="Create New Account"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
                 android:textSize="@dimen/_13sdp"
                 android:textStyle="bold" />
 
