@@ -15,20 +15,7 @@
         android:layout_centerInParent="true"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="169dp"
-        android:text="Loading..."
-        android:textColor="@color/error"
-        android:textSize="@dimen/_17sdp"
-        android:textStyle="bold" />
+
 
 
 </RelativeLayout>

@@ -89,10 +89,16 @@ public class ChatActivity extends BaseActivity {
         database.collection(Constants.KEY_COLLECTION_CHAT).add(message);
         if(conversionId != null)
         {
+            updateConversion(binding.inputMessage.getText().toString());
+        }
+        else {
             HashMap<String,Object> conversion = new HashMap<>();
             conversion.put(Constants.KEY_SENDER_ID,preferanceManager.getString(Constants.KEY_USER_ID));
             conversion.put(Constants.KEY_SENDER_NAME,preferanceManager.getString(Constants.KEY_NAME));
             conversion.put(Constants.KEY_SENDER_IMAGE,preferanceManager.getString(Constants.KEY_IMAGE));
+            conversion.put(Constants.KEY_RECEIVER_ID,receiverUser.id);
+            conversion.put(Constants.KEY_RECEIVER_NAME,receiverUser.name);
+            conversion.put(Constants.KEY_RECEIVER_IMAGE,receiverUser.image);
             conversion.put(Constants.KEY_LAST_MESSAGE,binding.inputMessage.getText().toString());
             conversion.put(Constants.KEY_TIMESTAMP , new Date());
             addConversion(conversion);

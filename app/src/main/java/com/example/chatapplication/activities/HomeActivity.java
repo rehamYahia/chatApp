@@ -1,6 +1,5 @@
 package com.example.chatapplication.activities;
 
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -31,7 +30,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-
 
 public class HomeActivity extends BaseActivity  implements ConversionListener {
     private ActivityHomeBinding binding;

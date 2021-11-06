@@ -40,8 +40,9 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/_13sdp" />
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_15sdp" />
 
             <TextView
                 android:id="@+id/textRecentMessage"
@@ -51,7 +52,7 @@
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorAccent"
                 android:textSize="@dimen/_12sdp" />
         </LinearLayout>
 

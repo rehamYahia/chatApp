@@ -27,7 +27,7 @@
             android:layout_marginLeft="@dimen/_8sdp"
             android:background="@drawable/background_received_message"
             android:padding="@dimen/_12sdp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/_13sdp"
             android:layout_toRightOf="@id/imageProfile" />
         <TextView
